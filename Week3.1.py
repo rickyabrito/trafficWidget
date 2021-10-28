@@ -54,17 +54,10 @@ print(is_power_of_two(9)) # Should be False
 
 # QUIZ.4
 def sum_divisors(n):
-  sum = 0
-  divisors = []
-
-  for i in range(2, n):
-    if n % i == 0 and n !=0:
-      divisors.append()
-    sum = sum(divisors) - n
-
-
+    return sum([i for i in range(1, n)
+               if n % i == 0])
   # Return the sum of all divisors of n, not including n
-  return sum
+    return sum
 
 print(sum_divisors(0))
 # 0
@@ -74,3 +67,60 @@ print(sum_divisors(36)) # Should sum of 1+2+3+4+6+9+12+18
 # 55
 print(sum_divisors(102)) # Should be sum of 2+3+6+17+34+51
 # 114
+
+# for loops: iterates over a sequence of values
+
+for x in range(5):
+  print(x)
+
+def square(n):
+    return n*n
+
+def sum_squares(x):
+    sum = 0
+    for n in range(x):
+        sum += (n**2)
+    return sum
+
+print(sum_squares(10)) # Should be 285
+
+product = 1
+for n in range(1,10):
+  product = product * n
+
+print(product)
+
+# For example, the factorial of four (4!) is equal to 1*2*3*4=24.
+
+def factorial(n):
+    result = 1
+    for i in range(1,n+1):
+        result = result * i
+    return result
+
+print(factorial(4)) # should return 24
+print(factorial(5)) # should return 120
+
+# coding dominoes combination
+
+
+#basketball teams 
+
+teams = ['Dragons', 'Wolves', 'Pands', 'Unicorns']
+
+for home_team in teams:
+  for away_team in teams:
+    if home_team != away_team:
+      print(home_team + " vs " + away_team)
+
+# recursion
+
+def factorial(n): # function
+  if n < 2: # conditional defining BASE CASE
+    return 1
+  result =  n * factorial(n-1) # function calling itself | RECURSIVE CASE
+  print("Returning " + str(result) + " for factorial of " + str(n))
+  return result
+
+print(factorial(3))
+
