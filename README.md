@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # gitTest
 
 # just trying out things ya know?
@@ -9,3 +10,14 @@ def car_listing(car_prices):
   return result
 
 print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
+=======
+# Project Description
+# Traffic Widget for task bar
+
+# Purpose:
+# The idea is to have a widge on the task bar, kind of like the weather widget,
+# that has the time it would take for user to get to his destination after work,
+# (like home, appointment, etc.)
+
+# Where to start? idk lol
+>>>>>>> 4da40edc61f85316a700debc7182df17f27bf564
